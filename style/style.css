@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #704c5e;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -13,13 +13,13 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-h1{
+h1 {
     text-align: center;
     color: rgb(243, 236, 236);
     margin-top: 8%;
 }
 
-form{
+form {
     background-color: #b88c9e;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@ form{
     text-align: center;
 }
 
-#cajita{
+#cajita {
     margin: 5% auto;
     margin-left: 8%;
     text-align: center;
@@ -40,12 +40,12 @@ form{
     display: inline-flex;
 }
 
-label{
+label {
     margin: 5% auto;
     font-size: 150%;
 }
 
-#radio{
+#radio {
     width: 60%;
     border-radius: 10px;
     border: none;
@@ -72,16 +72,8 @@ button:hover {
     cursor: pointer;
 }
 
-.error {
-    color: red;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 100%;
-    margin: 1%;
-    padding-bottom: 1%;
-}
-
 .contenedor,
-.container{
+.container {
     margin-left: 5%;
     padding-top: 2%;
     background-color: #b88c9e;
@@ -92,6 +84,38 @@ button:hover {
     font-size: 150%;
 }
 
-img{
+img {
     width: 20%;
+}
+
+@media (max-width: 767px) {
+
+    h1 {
+        margin-top: 30%;
+    }
+
+    form,
+    #cajita {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        width: 80%;
+        height: auto;
+        padding-bottom: 5%;
+        flex-direction: column;
+    }
+
+    .contenedor,
+    .container {
+        margin-left: -5%;
+        margin-top: 10%;
+        padding-top: 2%;
+        background-color: #b88c9e;
+        width: 90%;
+        padding-bottom: 2%;
+        border-radius: 10px;
+        border: 2px solid #e8c2ca;
+        font-size: 120%;
+    }
 }
